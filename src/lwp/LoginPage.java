@@ -29,11 +29,6 @@ public class LoginPage extends JFrame{
 			}
 		});
 	}
-	
-//	public void Close() {
-//		WindowEvent event = new WindowEvent(this.WindowEvent.WINDOW_CLOSING);
-//		Toolkit
-//	}
 
 	/**
 	 * Create the frame.
@@ -88,7 +83,6 @@ public class LoginPage extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				String username = usernameField.getText();
 				String password = passwordField.getText();
-				JButton src = (JButton) e.getSource();
 				
 					if(username.equals("linwaiphyo") && password.equals("123123")){
 				
