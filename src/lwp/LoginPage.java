@@ -3,16 +3,13 @@ package lwp;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
+import java.awt.event.*;
 import javax.swing.*;
 
 import javax.swing.JFrame;
 import javax.swing.border.EmptyBorder;
 
 public class LoginPage extends JFrame{
-
 	private JPanel contentPane;
 	private JTextField usernameField;
 	private JPasswordField passwordField;
@@ -32,6 +29,11 @@ public class LoginPage extends JFrame{
 			}
 		});
 	}
+	
+//	public void Close() {
+//		WindowEvent event = new WindowEvent(this.WindowEvent.WINDOW_CLOSING);
+//		Toolkit
+//	}
 
 	/**
 	 * Create the frame.
@@ -90,10 +92,13 @@ public class LoginPage extends JFrame{
 				
 					if(username.equals("linwaiphyo") && password.equals("123123")){
 				
-						JOptionPane.showMessageDialog(contentPane,"Login Successful!" );				
+						JOptionPane.showMessageDialog(contentPane,"Login Successful!" );
+						dispose();
+						MenuPage menuPage= new MenuPage();
+						menuPage.setVisible(true);
 		             }
 					else {
-						JOptionPane.showMessageDialog(contentPane, "Invalid Username or Passowrd :)");
+						JOptionPane.showMessageDialog(contentPane, "Incorrect Username or Password");
 					}
 				}
 				
