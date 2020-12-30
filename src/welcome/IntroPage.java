@@ -98,20 +98,8 @@ public class IntroPage {
 					
 					if((username.equals("linwaiphyo")) && (password.equals("123456"))) {
 						
-						JLabel logedin = new JLabel("Log in successful");
-						logedin.setBounds(25, 250, 200, 20);
-						logedin.setFont(new Font("Tahoma", Font.BOLD, 12));
-						frmEmpManagementSystem.getContentPane().add(logedin);
-						logedin.setBackground(Color.black);
-						
 					}
 					else {
-						
-						JLabel notLogedin = new JLabel("Incorrect Username or Password");
-						notLogedin.setBounds(25, 250, 300, 20);
-						notLogedin.setFont(new Font("Tahoma", Font.BOLD, 12));
-						frmEmpManagementSystem.getContentPane().add(notLogedin);
-						notLogedin.setBackground(Color.black);
 						
 					}
 				} 
