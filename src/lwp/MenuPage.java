@@ -179,6 +179,7 @@ public class MenuPage {
 		});
 		btnHome.setForeground(new Color(51, 204, 255));
 		btnHome.setBackground(new Color(0, 0, 0));
+		btnHome.setFocusPainted(false);
 		btnHome.setFont(new Font("Lucida Fax", Font.BOLD, 16));
 		btnHome.setBounds(89, 160, 128, 35);
 		frmEmpManagementSystem.getContentPane().add(btnHome);
@@ -187,6 +188,7 @@ public class MenuPage {
 		JButton btnRegister = new JButton("Register");
 		btnRegister.setForeground(new Color(51, 204, 255));
 		btnRegister.setBackground(new Color(0, 0, 0));
+		btnRegister.setFocusPainted(false);
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				card.show(parentPanel,"regPage");
@@ -204,20 +206,15 @@ public class MenuPage {
 		});
 		btnDisplay.setForeground(new Color(51, 204, 255));
 		btnDisplay.setBackground(new Color(0, 0, 0));
+		btnDisplay.setFocusPainted(false);
 		btnDisplay.setFont(new Font("Lucida Fax", Font.BOLD, 16));
 		btnDisplay.setBounds(89, 470, 128, 35);
 		frmEmpManagementSystem.getContentPane().add(btnDisplay);
 		frmEmpManagementSystem.setLocationRelativeTo(null);
 		
 		Object[] columns = {"ID", "Name","Email", "Position"};
-		
-		
 		table.setModel(model);
-		model.setColumnIdentifiers(columns);
-		 
-		
-		
-			
+		model.setColumnIdentifiers(columns);	
 		table.getColumnModel().getColumn(1).setPreferredWidth(116);
 		table.getColumnModel().getColumn(2).setPreferredWidth(193);
 		table.getColumnModel().getColumn(3).setPreferredWidth(139);
@@ -249,15 +246,16 @@ public class MenuPage {
 		        } else {
 		            JOptionPane.showMessageDialog(disPage, "Select a Row to Remove");
 		        }
-				
 			}
 		});
 		btnRemove.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnRemove.setBounds(585, 584, 100, 35);
+		btnRemove.setFocusPainted(false);
 		disPage.add(btnRemove);
 		
 		JButton btnSave = new JButton("Save");
 		btnSave.setVerticalAlignment(SwingConstants.BOTTOM);
+		btnSave.setFocusPainted(false);
 		btnSave.setFont(new Font("Tempus Sans ITC", Font.BOLD, 22));
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -287,9 +285,15 @@ public class MenuPage {
 						JOptionPane.showMessageDialog(regPage, "Saved successfully");
 					}
 				}
+				empName.setText("");
+				empID.setText("");
+				mail.setText("");
+				empPos.setText("");
 			}
+			
 		
 		});
+		
 		
 		btnSave.setBackground(new Color(0, 0, 0));
 		btnSave.setForeground(Color.LIGHT_GRAY);

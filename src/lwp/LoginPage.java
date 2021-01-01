@@ -100,6 +100,7 @@ public class LoginPage extends JFrame{
 		});
 		loginButton.setFont(new Font("SansSerif", Font.BOLD, 20));
 		loginButton.setBounds(331, 459, 89, 38);
+		loginButton.setFocusPainted(false);
 		contentPane.add(loginButton);
 	}
 }
