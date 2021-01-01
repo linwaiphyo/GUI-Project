@@ -89,7 +89,7 @@ public class LoginPage extends JFrame{
 						JOptionPane.showMessageDialog(contentPane,"Login Successful!" );
 						dispose();
 						MenuPage menuPage= new MenuPage();
-						menuPage.setVisible(true);
+						menuPage.run();
 		             }
 					else {
 						JOptionPane.showMessageDialog(contentPane, "Incorrect Username or Password");
