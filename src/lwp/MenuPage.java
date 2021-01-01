@@ -25,6 +25,7 @@ import java.awt.Container;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.SwingConstants;
 
 public class MenuPage {
 
@@ -128,21 +129,25 @@ public class MenuPage {
 		regPage.add(lblNewLabel_1_3);
 		
 		empID = new JTextField();
+		empID.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		empID.setBounds(312, 175, 234, 27);
 		regPage.add(empID);
 		empID.setColumns(10);
 		
 		empName = new JTextField();
+		empName.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		empName.setColumns(10);
 		empName.setBounds(312, 259, 234, 27);
 		regPage.add(empName);
 		
 		mail = new JTextField();
+		mail.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		mail.setColumns(10);
 		mail.setBounds(312, 361, 234, 27);
 		regPage.add(mail);
 		
 		empPos = new JTextField();
+		empPos.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		empPos.setColumns(10);
 		empPos.setBounds(312, 452, 234, 27);
 		regPage.add(empPos);
@@ -240,9 +245,9 @@ public class MenuPage {
 		        
 		        if (getSelectedRowForDeletion >= 0) {
 		            model.removeRow(getSelectedRowForDeletion);
-		            JOptionPane.showMessageDialog(disPage, "Row Deleted");
+		            JOptionPane.showMessageDialog(disPage, "Removed Successfully");
 		        } else {
-		            JOptionPane.showMessageDialog(disPage, "Unable To Delete");
+		            JOptionPane.showMessageDialog(disPage, "Select a Row to Remove");
 		        }
 				
 			}
@@ -252,6 +257,8 @@ public class MenuPage {
 		disPage.add(btnRemove);
 		
 		JButton btnSave = new JButton("Save");
+		btnSave.setVerticalAlignment(SwingConstants.BOTTOM);
+		btnSave.setFont(new Font("Tempus Sans ITC", Font.BOLD, 22));
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String name = empName.getText();
@@ -279,16 +286,13 @@ public class MenuPage {
 						model.addRow(rows);
 						JOptionPane.showMessageDialog(regPage, "Saved successfully");
 					}
-					
-					
-					
 				}
 			}
 		
 		});
 		
 		btnSave.setBackground(new Color(0, 0, 0));
-		btnSave.setForeground(new Color(51, 204, 255));
+		btnSave.setForeground(Color.LIGHT_GRAY);
 		btnSave.setBounds(447, 545, 99, 35);
 		regPage.add(btnSave);
 		
