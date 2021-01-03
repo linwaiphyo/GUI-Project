@@ -93,9 +93,7 @@ public class MenuPage {
 		lblEmpManagementSystem.setFont(new Font("Sitka Small", Font.BOLD, 29));
 		lblEmpManagementSystem.setBounds(203, 104, 492, 35);
 		homePage.add(lblEmpManagementSystem);
-				
-			
-				
+							
 		final JPanel regPage = new JPanel();
 		regPage.setBackground(new Color(0, 204, 204));
 		parentPanel.add(regPage, "regPage");
@@ -129,25 +127,25 @@ public class MenuPage {
 		regPage.add(lblNewLabel_1_3);
 		
 		empID = new JTextField();
-		empID.setFont(new Font("Times New Roman", Font.BOLD, 18));
+		empID.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		empID.setBounds(312, 175, 234, 27);
 		regPage.add(empID);
 		empID.setColumns(10);
 		
 		empName = new JTextField();
-		empName.setFont(new Font("Times New Roman", Font.BOLD, 18));
+		empName.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		empName.setColumns(10);
 		empName.setBounds(312, 259, 234, 27);
 		regPage.add(empName);
 		
 		mail = new JTextField();
-		mail.setFont(new Font("Times New Roman", Font.BOLD, 18));
+		mail.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		mail.setColumns(10);
 		mail.setBounds(312, 361, 234, 27);
 		regPage.add(mail);
 		
 		empPos = new JTextField();
-		empPos.setFont(new Font("Times New Roman", Font.BOLD, 18));
+		empPos.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		empPos.setColumns(10);
 		empPos.setBounds(312, 452, 234, 27);
 		regPage.add(empPos);
@@ -160,8 +158,6 @@ public class MenuPage {
 		
 		
 		JLabel lblTotalNumberOf = new JLabel();
-		 
-		
 		lblTotalNumberOf.setForeground(Color.WHITE);
 		lblTotalNumberOf.setFont(new Font("Sitka Small", Font.BOLD, 25));
 		lblTotalNumberOf.setBounds(255, 306, 478, 35);
