@@ -55,7 +55,7 @@ public class MenuPage {
 					e.printStackTrace();
 				}
 			}
-		
+			
 	/**
 	 * Create the application.
 	 */
@@ -289,8 +289,6 @@ public class MenuPage {
 			
 		
 		});
-		
-		
 		btnSave.setBackground(new Color(0, 0, 0));
 		btnSave.setForeground(Color.LIGHT_GRAY);
 		btnSave.setBounds(447, 545, 99, 35);
