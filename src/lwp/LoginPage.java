@@ -95,8 +95,6 @@ public class LoginPage extends JFrame{
 						JOptionPane.showMessageDialog(contentPane, "Incorrect Username or Password");
 					}
 				}
-				
-			
 		});
 		loginButton.setFont(new Font("SansSerif", Font.BOLD, 20));
 		loginButton.setBounds(331, 459, 89, 38);
