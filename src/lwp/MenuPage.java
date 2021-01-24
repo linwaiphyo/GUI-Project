@@ -150,8 +150,6 @@ public class MenuPage {
 		empPos.setBounds(312, 452, 234, 27);
 		regPage.add(empPos);
 		
-		
-		
 		JPanel disPage = new JPanel();
 		disPage.setBackground(new Color(204, 204, 255));
 		parentPanel.add(disPage, "disPage");
